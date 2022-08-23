@@ -21,68 +21,70 @@
     </properties>
 
     <dependencies>
-    <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>fastjson</artifactId>
-        <version>1.2.62</version>
-    </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.62</version>
+        </dependency>
 
-    <dependency>
-        <groupId>org.apache.spark</groupId>
-        <artifactId>spark-core_2.12</artifactId>
-        <version>${spark.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.spark</groupId>
-        <artifactId>spark-streaming_2.12</artifactId>
-        <version>${spark.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.kafka</groupId>
-        <artifactId>kafka-clients</artifactId>
-        <version>${kafka.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.spark</groupId>
-        <artifactId>spark-streaming-kafka-0-10_2.12</artifactId>
-        <version>${spark.version}</version>
-    </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.12</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.12</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${kafka.version}</version>
 
-    <dependency>
-        <groupId>org.apache.spark</groupId>
-        <artifactId>spark-sql_2.12</artifactId>
-        <version>${spark.version}</version>
-    </dependency>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka-0-10_2.12</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
 
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
-        <version>2.11.0</version>
-    </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.12</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
 
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-to-slf4j</artifactId>
-        <version>2.11.0</version>
-    </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.11.0</version>
+        </dependency>
 
-    <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>5.1.47</version>
-    </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-to-slf4j</artifactId>
+            <version>2.11.0</version>
+        </dependency>
 
-    <dependency>
-        <groupId>redis.clients</groupId>
-        <artifactId>jedis</artifactId>
-        <version>3.3.0</version>
-    </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+        </dependency>
 
-    <dependency>
-        <groupId>org.elasticsearch</groupId>
-        <artifactId>elasticsearch</artifactId>
-        <version>7.8.0</version>
-    </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>7.8.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>elasticsearch-rest-high-level-client</artifactId>
@@ -99,14 +101,14 @@
 
     <build>
         <plugins>
-            <!-- 该插件用于将 Scala 代码编译成 class 文件 -->
+            <!-- 该插件用于将Scala代码编译成class文件 -->
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
                 <version>3.4.6</version>
                 <executions>
                     <execution>
-                        <!-- 声明绑定到 maven 的 compile 阶段 -->
+                        <!-- 声明绑定到maven的compile阶段 -->
                         <goals>
                             <goal>compile</goal>
                             <goal>testCompile</goal>
@@ -136,5 +138,7 @@
             </plugin>
         </plugins>
     </build>
+
+
 
 </project>
